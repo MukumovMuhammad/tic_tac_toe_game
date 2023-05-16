@@ -24,12 +24,18 @@
     margin-bottom: 1em;
 }
 
+.hide{
+    display: none;
+}
+
+
 .container{
     
     margin: 0 auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     max-width: 300px;
+    grid-template-columns: row;
 }
 
 .tile{
@@ -39,7 +45,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    display: flex;
+    font-size: 50px;
 }
+
 
 .controls{
     display: flex;
@@ -49,16 +58,24 @@
 }
 
 .controls button{
-    color:white;
+    color:rgb(0, 0, 0);
     padding: 8px;
     border:8px;
     border:none;
     font-size: 25px;
     cursor: pointer;
-   
 
 }
 
 #reset{
     background-color: aqua;
+    margin-top: 20px;
+}
+
+
+.playerX{
+    color:green;
+}
+.playerO{
+    color:red;
 }
